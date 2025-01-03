@@ -1,0 +1,33 @@
+.user-coupons {
+    margin: 50px auto;
+    width: 60%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-coupons h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.user-coupons ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-coupons li {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-coupons li strong {
+    display: block;
+    font-size: 16px;
+}
+

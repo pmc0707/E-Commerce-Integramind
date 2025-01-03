@@ -1,0 +1,92 @@
+
+.register-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+.login-link {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/* Style for both buttons */
+.user-btn, .admin-btn {
+  width: 50%;           /* Set width to 50% */
+  color: #007BFF;
+  background-color: transparent;  /* No background color */
+  border: 2px solid #ccc; /* Border around the buttons */
+  padding: 10px 20px;    /* Adjust padding for better visuals */
+  font-size: 16px;       /* Font size */
+  cursor: pointer;       /* Cursor to pointer */
+  transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth transition for color changes */
+  border-radius: 0px;
+}
+
+/* Style when a button is active */
+.user-btn.active, .admin-btn.active {
+  background-color: #007BFF; /* Blue background when active */
+  color: white;   
+  border-color: #007BFF;     /* Change border color when active */
+}
+
+/* Optional: add hover effect */
+.user-btn:hover, .admin-btn:hover {
+    /* Light blue hover */
+  color:white;                          /* Change text color on hover */
+  background-color: #007BFF; }

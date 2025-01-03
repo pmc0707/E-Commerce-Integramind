@@ -1,0 +1,46 @@
+.collaborate-section {
+    position: relative;
+    /* height: 400px; */
+    background-image: url('https://websitedemos.net/fashion-blog-04/wp-content/uploads/sites/1405/2023/10/27.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .overlay {
+    background-color: rgba(128, 0, 0, 0.6); 
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .overlay h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .overlay p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .contact-button {
+    background-color: #f43f5e;  
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-button:hover {
+    background-color: #ff6b7a;
+     
+  }
+  

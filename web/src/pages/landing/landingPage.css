@@ -1,0 +1,61 @@
+.landing-page {
+  position: relative;
+  height: 100vh;
+  background-image: url('https://websitedemos.net/clothing-store-02/wp-content/uploads/sites/1447/2024/03/bg-01.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.landing-page-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.landing-page-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.landing-tagline {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.landing-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.landing-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.landing-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.landing-button:hover {
+  background-color: white;
+  color: black;
+}

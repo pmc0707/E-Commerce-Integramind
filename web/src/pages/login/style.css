@@ -1,0 +1,102 @@
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Secondary text for instructions */
+.text-secondary {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+/* Center the text */
+.text-center {
+  text-align: center;
+}
+
+/* Form group container */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input fields styling */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect for input fields */
+.form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Submit button styles */
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Link for 'Forgot Password' */
+.forgot-password-link {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Hover effect for the link */
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the main login page container */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+  padding: 20px;
+}

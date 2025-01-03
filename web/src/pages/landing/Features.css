@@ -1,0 +1,48 @@
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: #f9fafb;  /* Light background */
+    text-align: center;
+  }
+  
+  .feature-item {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .feature-item h3 {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #111827;  /* Dark heading color */
+  }
+  
+  .feature-item p {
+    font-size: 1em;
+    color: #6B7280;  /* Lighter text color */
+  }
+  
+  .feature-icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #4B5563; /* Icon color */
+  }
+  
+  /* Example icon classes */
+  .lock-icon:before {
+    content: '🔒';
+  }
+  
+  .shipping-icon:before {
+    content: '🚚';
+  }
+  
+  .returns-icon:before {
+    content: '🔄';
+  }
+  
+  .tracking-icon:before {
+    content: '📍';
+  }
+  

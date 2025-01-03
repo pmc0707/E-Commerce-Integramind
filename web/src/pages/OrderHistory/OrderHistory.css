@@ -1,0 +1,190 @@
+/* Container styles */
+.order-history__container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title styles */
+.order-history__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Row layout for order cards */
+.order-history__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between; /* Space between the cards */
+}
+
+/* Card column styles (full width) */
+.order-history__card-col {
+    width: 100%; /* Full width */
+    margin-bottom: 20px;
+    height: 40vh; /* Fixed height for cards */
+}
+
+/* Card styles */
+.order-history__card {
+    width: 100%;
+    height: 100%; /* Full height for each card */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Spread content horizontally */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.order-history__card:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+/* Image styles */
+.order-history__card-img-top {
+    height: 100%; /* Image takes full card height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px; /* Space between image and text */
+}
+
+/* Card body styles */
+.order-history__card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Title and price styles */
+.order-history__card-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.order-history__card-price, .order-history__card-discounted-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5cb85c;
+}
+
+/* Date and status styles */
+.order-history__card-date,
+.order-history__card-delivery-date,
+.order-history__card-status {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Button styles */
+.order-history__btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+
+.order_history_data{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* Rating styles */
+.order-history__rating {
+    margin: 10px 0;
+}
+
+.order-history__rating label {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Review textarea styles */
+
+.order-history__review input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 10px;
+}
+
+
+.order-history__submit-btn {
+    width: 10%;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.order-history__submit-btn:hover {
+    background-color: #4cae4c;
+}
+
+
+/* Styles for clickable stars */
+.star-filled {
+    color: #f5c518; /* Amazon-like gold star color */
+    cursor: pointer;
+}
+
+.star-empty {
+    color: #ccc; /* Grey for empty stars */
+    cursor: pointer;
+}
+
+.order-history__rating {
+    margin: 10px 0;
+    display: flex;
+    /* align-items: center; */
+}
+
+/* Review textarea */
+.order-history__textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+}
+
+/* Submit button */
+.order-history__submit-btn {
+    background-color: #f5c518;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-history__submit-btn:hover {
+    background-color: #c9a40b;
+}

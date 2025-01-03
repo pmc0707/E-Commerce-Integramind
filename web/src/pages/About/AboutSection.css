@@ -1,0 +1,61 @@
+.about-section {
+    padding: 50px;
+    background-color: #8bf0ff;
+    height: 110vh;
+  }
+  
+  .about-section h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b6f0fe;
+  }
+  
+  .about-image {
+    width: 600px;
+    height: 500px;
+    margin-right: 40px;
+  }
+  
+  .about-text {
+    max-width: 600px;
+  }
+  
+  .about-text h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .mission{  
+    background-color: #b6f0fe;
+    margin-top: 50px;
+    padding: 100px;
+    
+
+  }
+
+  .mission h2 , p{
+    text-align: center;
+
+  }
+
+  .mission p{
+    font-size: 18px;
+    /* padding-bottom: 50px ; */
+  }
+
+  .mission h2{
+    font-size: 35px;
+  }
