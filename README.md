@@ -66,5 +66,5 @@ This project is a full-stack e-commerce platform built with a modern tech stack.
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/ecommerce-website.git
-   cd ecommerce-website
+   
 
