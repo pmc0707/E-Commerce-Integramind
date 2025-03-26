@@ -65,6 +65,6 @@ This project is a full-stack e-commerce platform built with a modern tech stack.
 ### Steps:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/ecommerce-website.git
+   git clone https://github.com/pmc0707/E-Commerce-Integramind.git
    
 
