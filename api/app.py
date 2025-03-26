@@ -6,7 +6,8 @@ from flask_jwt_extended import JWTManager, create_access_token, jwt_required, ge
 from flask_cors import CORS
 from datetime import datetime, timedelta
 import logging
-
+from bson import ObjectId
+from dotenv import load_dotenv
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)
@@ -15,11 +16,14 @@ CORS(app)
 logging.basicConfig(level=logging.INFO)
 
 # MongoDB configuration
-client = MongoClient('mongodb://localhost:27017/')
+MONGO_URI = os.getenv('MONGO_URI')
+client = MongoClient(MONGO_URI)
 db = client['userdb']
 user_collection = db['users']
 product_collection = db['products']
 orders_collection = db['orders']
+coupons_collection = db['coupons']
+
 
 # Configure JWT Secret Key from environment variables
 app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY', 'super-secret-key')  # Change this in production
