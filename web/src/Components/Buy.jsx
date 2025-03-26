@@ -180,6 +180,7 @@ const Buy = () => {
                                 )}
                             </div>
 
+                            {/* Updated: Always render the discount and final price after applying the coupon */}
                             <div className="buy-interface__price-details">
                                 <h4>Total Cart Value: ₹{totalCartValue}</h4>
                                 {discount > 0 && (

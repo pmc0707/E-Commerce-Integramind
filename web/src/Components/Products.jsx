@@ -2,17 +2,12 @@ import { useState, useEffect } from "react";
 import Skeleton from "react-loading-skeleton";
 import "./Product.css";
 import { NavLink } from "react-router-dom";
-import SearchBar from "./Searchbar";
-import Sorting from "./Sorting";
 
 const Products = () => {
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState([]);
     const [loading, setLoading] = useState(false);
     const [userInterests, setUserInterests] = useState([]);
-    const [searchQuery, setSearchQuery] = useState("");
-    const [currentSort, setCurrentSort] = useState(""); // Track current sort type
-    const [selectedCategory, setSelectedCategory] = useState("All"); // Track selected category
 
     useEffect(() => {
         const getProducts = async () => {
@@ -45,7 +40,6 @@ const Products = () => {
                     const profileData = await response.json();
                     setUserInterests(profileData.user.interests);
                     console.log("User Interests:", profileData.user.interests);
-
                 }
             } catch (error) {
                 console.error("Error fetching user interests:", error);
@@ -56,7 +50,7 @@ const Products = () => {
     useEffect(() => {
         fetchUserInterests();
     }, []);
-    
+
     const handleProductClick = async (category) => {
         try {
             const token = localStorage.getItem("access_token");
@@ -118,50 +112,29 @@ const Products = () => {
         setFilter(filteredProducts);
     };
 
-    const handleCategoryChange = (category) => {
-        setSelectedCategory(category);
-        setSearchQuery(""); // Reset search query when category changes
-        setCurrentSort(""); // Reset sort when category changes
-    };
-
-    const handleSearch = (e) => {
-        setSearchQuery(e.target.value);
-    };
-
-    const handleSort = (sortType) => {
-        setCurrentSort(sortType);
-    };
-
     const renderFilterButtons = () => (
         <div className="buttons d-flex justify-content-center mb-5 pb-5">
-            <button className="btn btn-outline-dark me-2" onClick={() => handleCategoryChange("All")}>All</button>
-            <button className="btn btn-outline-dark me-2" onClick={() => handleCategoryChange("men's clothing")}>Men Clothing</button>
-            <button className="btn btn-outline-dark me-2" onClick={() => handleCategoryChange("women's clothing")}>Women Clothing</button>
-            <button className="btn btn-outline-dark me-2" onClick={() => handleCategoryChange("jewelery")}>Jewelery</button>
-            <button className="btn btn-outline-dark me-2" onClick={() => handleCategoryChange("electronics")}>Electronics</button>
+            <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("All")}>All</button>
+            <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("men's clothing")}>Men Clothing</button>
+            <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("women's clothing")}>Women Clothing</button>
+            <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("jewelery")}>Jewelery</button>
+            <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("electronics")}>Electronics</button>
         </div>
     );
 
     const ShowProducts = () => (
         <>
-            <SearchBar searchQuery={searchQuery} onSearch={handleSearch} />
-            <Sorting 
-                onSort={handleSort} 
-                currentSort={currentSort} 
-                onCategoryChange={handleCategoryChange} 
-                selectedCategory={selectedCategory} // Pass selected category
-            />
             {renderFilterButtons()}
-            {filter.map((product) => (
+            {filter.slice().reverse().map((product) => (
                 <div className="col-md-3 mb-4 card-hight" key={product.id}>
-                    <NavLink to={`/product/${product.id}`} className="links-product">
-                        <div className="card h-100 text-center">
+                    <NavLink to={`/product/${product.id}`} className="links-product" onClick={() => handleProductClick(product.category)}> {/* Fixed template literal */}
+                        <div className="card h-100 text-center ">
                             <img src={product.image} className="card-img-top ps-4 pe-4 pt-1" alt={product.title} height="250px" />
                             <div className="card-body">
                                 <h5 className="card-title mb-0">{product.title.substring(0, 50)}...</h5>
                                 <h4 className="card-text">
                                     ₹{parseFloat(product.price).toFixed(2)} <span className="tfprice">M.R.P</span> <span className="wrongprice tfprice">
-                                        ₹{(parseFloat(product.price) * 2.3).toFixed(2)}
+                                        ₹{(parseFloat(product.price) * 2.3).toFixed(2)}  {/* Apply 15% discount */}
                                     </span>
                                 </h4>
                             </div>

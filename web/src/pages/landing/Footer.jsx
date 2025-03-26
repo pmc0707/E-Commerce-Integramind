@@ -22,7 +22,7 @@ const Footer = () => {
                         <p>About Us</p>
                     </div>
                     <div className="footer-section social">
-                        <h3>Follow us on</h3>
+                        <h3 className="social">Follow us on</h3>
                         <div className="social-icons">
                             <a href="#"><i className="fab fa-instagram"></i></a>
                             <a href="#"><i className="fab fa-youtube"></i></a>
@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="footer-bottom">
                 <p>
                     INTEGRA SHOP is a E-Commerce plateform<br />
-                    Copyright©2023 mojsenie. All rights reserved
+                    Copyright©2024 IntegraShop. All rights reserved
                 </p>
             </div>
         </footer>

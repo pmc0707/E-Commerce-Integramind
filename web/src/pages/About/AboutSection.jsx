@@ -19,26 +19,25 @@ const AboutSection = () => {
             uniqueness.
           </p>
           <p>
-            Founded in [Year] by [Founder's Name], [Your Brand Name] has come a
-            long way from its beginnings in [location or story behind the
-            brand]. When [Founder's Name] first started out, their passion for
-            [passion or mission] drove them to quit their day job, and gave them
+            Founded in  024by  IntegraMind,  IntegraShop has come a
+            long way from its beginnings in  Mathura. When Pranjal Mridul first started out, their passion for
+             rovide cheap and best drove them to quit their day job, and gave them
             the impetus to turn hard work and inspiration into a booming online
             store.
           </p>
           <p>
-            We now serve customers all over [location or market], and are
+            We now serve customers all over  ocation , and are
             thrilled to be a part of the quirky, eco-friendly, fair trade wing
-            of the [industry].
+            of the  ndustry.
           </p>
         </div>
       </div>
       <div style={{ padding:0}} className="mission">
         <h2>Our Mission</h2>
         <p>
-          Our mission is to [your mission statement]. We believe in [values or
-          principles], and strive to [what you hope to achieve for your
-          customers]. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Our mission is to cheap and best. We believe in values or
+          principles, and strive to what you hope to achieve for your
+          customers. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Quibusdam cum voluptatum similique repudiandae optio harum ut
           asperiores iste voluptatibus commodi eum totam vero maxime explicabo,
           molestiae sunt earum quam quidem!

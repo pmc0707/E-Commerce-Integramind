@@ -38,7 +38,7 @@ const Navbar = () => {
             <nav className="navbar navar-expand-lg navbar-light bg-white shadow-sm mleft custom-margin-bottom ">
                 <NavLink to="/cart" className="btn btn-outline-dark sleft">
                     <FontAwesomeIcon icon={faCartArrowDown} className="custom-icon" /> 
-                    Cart ({cartProducts.length}) {/* Displaying the length of the cart */}
+                    Cart {/* Displaying the length of the cart */}
                 </NavLink>
                 <NavLink to="/" className="navbar-brand fw-bold fs-4">
                     <h1 className='sright'>INTEGRA SHOP</h1>

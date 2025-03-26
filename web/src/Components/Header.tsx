@@ -63,9 +63,9 @@ const CommonHeader = () => {
           Integra Shop
         </Link>
         <ul className="nav-links">
-        <li>
-                <Link to="/order">Home</Link>
-              </li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
           {!isLoggedIn &&
           <li>
             <Link to="/orders">Products</Link>
@@ -77,15 +77,12 @@ const CommonHeader = () => {
                 <Link to="/productList">Product List</Link>
               </li>
               <li>
-                <Link to="/tracking">Buy Detail</Link>
-
                 <Link to="/coupons">Coupon</Link>
               </li>
               <li>
                 <Link to="/coupan-form">Create Coupon</Link>
-               
+                
               </li>
-             
             </>
           ) : isLoggedIn && userType === "regular" ? ( // Show regular user links if userType is 'regular'
             <>

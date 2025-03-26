@@ -5,8 +5,8 @@ import "./style.css";
 const PageNotImplemented = () => {
   return (
     <section className="page-404">
-      <h1>Page not implemented</h1>
-      <p>Add your code / content here.</p>
+      <img className="under-process" src="https://images01.nicepagecdn.com/page/15/06/website-template-preview-1506157.jpg"></img>
+      
     </section>
   );
 };
