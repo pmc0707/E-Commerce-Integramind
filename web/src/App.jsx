@@ -12,7 +12,7 @@ import Order from "./pages/order/Order";
 import Product from "./Components/Product";
 import Login from "./pages/login";
 import Register from "./pages/register";
-import Profile from "./pages/profile";
+import Profile from "./pages/Profile/index";
 import OrderHistory from "./pages/OrderHistory/index";
 import Address from "./pages/Profile/Address";
 import Cart from "./Components/Cart";
